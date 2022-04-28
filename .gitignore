@@ -60,7 +60,6 @@ atlassian-ide-plugin.xml
 
 # Cursive Clojure plugin
 .idea/replstate.xml
-
 # SonarLint plugin
 .idea/sonarlint/
 
@@ -76,6 +75,7 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+#
 venv/
 db.sqlite3
 .idea/
