@@ -1,14 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
-{% include 'head.html' %}
-<body>
-{% include 'header.html' %}
+    <head>
+        <title>
+            {% block title %}
+            게시판 예제입니다.
+            {% endblock %}
+        </title>
+         {% block styles %}
+         <style>
+             .myclass {
+                color:blue;
+             }
+         </style>
+         {% endblock %}
+         {% block scripts %}
+         <script LANGUAGE="javascript">
+             function testFunction() {
+                alert("Javascript function...");
+             }
+         </script>
+         {% endblock %}
+    </head>
+    <body>
 
-
-{% block content %}
-
-{% endblock %}
-
-{% include 'footer.html' %}
-</body>
-</html>
+    {% block body %}
+    {% endblock %}
